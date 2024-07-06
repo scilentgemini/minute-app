@@ -14,11 +14,13 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between p-4 bg-gray-100">
+    <header className=" border-b">
+      <div className="flex items-center justify-between p-4 max-w-[1300px] mx-auto">
       <div className="flex items-center">
         <Image
           src="/MauveineTech.svg"
           alt="Mauveine Tech Logo"
+          className="w-28 md:w-48"
           width={200}
           height={24}
           priority
@@ -33,6 +35,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
+      </div>
     </header>
   );
 }
